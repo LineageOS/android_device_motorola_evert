@@ -14,11 +14,6 @@ vendor/etc/acdbdata/idn/Hdmi_cal.acdb
 vendor/etc/acdbdata/idn/Headset_cal.acdb
 vendor/etc/acdbdata/idn/Speaker_cal.acdb
 
-# Display calib
-vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_593.xml
-
 # Camera
 etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
 etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
@@ -388,6 +383,17 @@ vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
 
+# Display calib
+vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_593.xml
+
+# Display Panels
+vendor/firmware/focaltech-auo-ft5x46-03-0001-evert.bin
+vendor/firmware/focaltech-djn-ft5x46-15-0001-evert.bin
+vendor/firmware/goodix-auo-gt9xx-600a-0001-evert.bin
+vendor/firmware/goodix-tianma-gt9xx-6009-0001-evert.bin
+
 # DRM
 vendor/bin/qseecomd
 vendor/lib/libcppf.so
@@ -435,3 +441,9 @@ vendor/lib64/libkeymasterutils.so
 
 # NFC
 vendor/lib64/libpn553_fw.so
+
+# Sound Card - Marley
+vendor/firmware/marley-dsp1-ultrasound.wmfw
+vendor/firmware/marley-dsp2-aov-frontend.wmfw
+vendor/firmware/marley-dsp2-aov-vrgain.bin
+vendor/firmware/marley-dsp3-aov-control.wmfw
