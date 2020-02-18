@@ -17,9 +17,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/motorola/evert/evert-vendor.mk)
 
-# Properties
--include $(LOCAL_PATH)/vendor_prop.mk
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_ENFORCE_RRO_TARGETS := *
