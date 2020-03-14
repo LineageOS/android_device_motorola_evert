@@ -56,12 +56,8 @@ PRODUCT_PACKAGES += \
     bootctrl.sdm660 \
     bootctrl.sdm660.recovery
 
-# TWRP
-ifeq ($(WITH_TWRP),true)
-    $(call inherit-product, device/motorola/evert/twrp/twrp.mk)
-else
-    TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
-endif
+# Recovery
+TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := evert
