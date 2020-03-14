@@ -10,7 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile3=/vendor/etc/acdbdata/idn/Speaker_cal.acdb \
     persist.vendor.audio.calfile4=/vendor/etc/acdbdata/idn/Hdmi_cal.acdb \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/idn/Headset_cal.acdb \
-    persist.vendor.audio.calfile6=/vendor/etc/acdbdata/idn/Handset_cal.acdb \
+    persist.vendor.audio.calfile6=/vendor/etc/acdbdata/idn/Handset_cal.acdb
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
