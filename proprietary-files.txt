@@ -6,12 +6,12 @@ vendor/etc/acdbdata/common/Handset_cal.acdb
 vendor/etc/acdbdata/common/Hdmi_cal.acdb
 vendor/etc/acdbdata/common/Headset_cal.acdb
 vendor/etc/acdbdata/common/Speaker_cal.acdb
-vendor/etc/acdbdata/idn/Bluetooth_cal.acdb
+vendor/etc/acdbdata/idn/Bluetooth_cal.acdb|de32f236e41af911ffaa7a52018eb5e1556936c1
 vendor/etc/acdbdata/idn/General_cal.acdb
 vendor/etc/acdbdata/idn/Global_cal.acdb
-vendor/etc/acdbdata/idn/Handset_cal.acdb
+vendor/etc/acdbdata/idn/Handset_cal.acdb|f9d49f6e2fc399f8c7d8574fa357bbfaba7dc54f
 vendor/etc/acdbdata/idn/Hdmi_cal.acdb
-vendor/etc/acdbdata/idn/Headset_cal.acdb
+vendor/etc/acdbdata/idn/Headset_cal.acdb|6ac7e68e3794f9a2b73f37a516e29be178eba33f
 vendor/etc/acdbdata/idn/Speaker_cal.acdb
 
 # Camera
