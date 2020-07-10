@@ -17,6 +17,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.expose.aux=1 \
     vendor.video.disable.ubwc=1
 
+# Dex-PreOpt
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cp_system_other_odex=1
+
 # FM
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.fm.use_audio_session=true
