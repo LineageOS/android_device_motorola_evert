@@ -25,5 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+on early-init
+    setprop ro.boot.product.hardware.sku qcril
+
 on property:ro.boot.hardware.sku=XT1926-9
     setprop ro.hw.nfc false
