@@ -973,6 +973,14 @@
 		<path name="voice-dmic-ef" />
 	</path>
 
+	<path name="handset-stereo-dmic-ef">
+		<path name="voice-dmic-ef" />
+	</path>
+
+	<path name="speaker-stereo-dmic-ef">
+		<path name="speaker-dmic-endfire" />
+	</path>
+
 	<path name="voice-speaker-dmic-ef">
 		<path name="mic1" />
 	</path>
