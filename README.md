@@ -17,4 +17,4 @@ Display | 1080 x 2160 pixels, 5.9" IPS LCD
 Rear Camera  | 12 MP (f/1.7) + 5 MP (f/2.2), (PDAF, dual pixel)
 Front Camera | 8 MP (f/2.2)
 
-![Motorola G6 Plus](https://cdn2.gsmarena.com/vv/pics/motorola/motorola-moto-g6-plus-2.jpg "Motorola G6 Plus")
+![Motorola G6 Plus](https://motorolaau.vtexassets.com/arquivos/ids/155426-800-auto?width=800&height=auto&aspect=true "Motorola G6 Plus")
