@@ -372,28 +372,12 @@ vendor/lib/libS5k2l7PdafCamif.so
 vendor/lib/libmm-qcamera.so
 
 # Camera - Firmware
-vendor/firmware/cpp_firmware_v1_10_0.fw
 vendor/firmware/cpp_firmware_v1_12_0.fw
-vendor/firmware/cpp_firmware_v1_1_1.fw
-vendor/firmware/cpp_firmware_v1_1_6.fw
-vendor/firmware/cpp_firmware_v1_2_0.fw
-vendor/firmware/cpp_firmware_v1_4_0.fw
-vendor/firmware/cpp_firmware_v1_5_0.fw
-vendor/firmware/cpp_firmware_v1_5_1.fw
-vendor/firmware/cpp_firmware_v1_5_2.fw
-vendor/firmware/cpp_firmware_v1_6_0.fw
-vendor/firmware/cpp_firmware_v1_8_0.fw
 
 # Display calib
 vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_593.xml
-
-# Display Panels
-vendor/firmware/focaltech-auo-ft5x46-03-0001-evert.bin
-vendor/firmware/focaltech-djn-ft5x46-15-0001-evert.bin
-vendor/firmware/goodix-auo-gt9xx-600a-0001-evert.bin
-vendor/firmware/goodix-tianma-gt9xx-6009-0001-evert.bin
 
 # DRM
 vendor/bin/qseecomd
@@ -414,6 +398,31 @@ vendor/lib64/libssd.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
+
+# Firmware - CapSense
+system/etc/firmware/MotorolaCapSense.hex:vendor/firmware/MotorolaCapSense.hex
+
+# Firmware - Display panels
+vendor/firmware/focaltech-auo-ft5x46-03-0001-evert.bin
+vendor/firmware/focaltech-djn-ft5x46-15-0001-evert.bin
+vendor/firmware/goodix-auo-gt9xx-600a-0001-evert.bin
+vendor/firmware/goodix-tianma-gt9xx-6009-0001-evert.bin
+
+# Firmware - DSP
+vendor/firmware/marley-dsp1-ultrasound.wmfw
+vendor/firmware/marley-dsp2-aov-frontend.wmfw
+vendor/firmware/marley-dsp2-aov-vrgain.bin
+vendor/firmware/marley-dsp3-aov-control.wmfw
+
+# Firmware - Opalum
+system/etc/firmware/opalum.rx.ext.config.0:vendor/firmware/opalum.rx.ext.config.0
+system/etc/firmware/opalum.rx.ext.config.1:vendor/firmware/opalum.rx.ext.config.1
+system/etc/firmware/opalum.rx.ext.config.2:vendor/firmware/opalum.rx.ext.config.2
+system/etc/firmware/opalum.rx.ext.config.3:vendor/firmware/opalum.rx.ext.config.3
+system/etc/firmware/opalum.tx.ext.config.0:vendor/firmware/opalum.tx.ext.config.0
+system/etc/firmware/opalum.tx.ext.config.1:vendor/firmware/opalum.tx.ext.config.1
+system/etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.2
+system/etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -440,9 +449,3 @@ vendor/lib64/libkeymasterutils.so
 
 # NFC
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
-
-# Sound Card - Marley
-vendor/firmware/marley-dsp1-ultrasound.wmfw
-vendor/firmware/marley-dsp2-aov-frontend.wmfw
-vendor/firmware/marley-dsp2-aov-vrgain.bin
-vendor/firmware/marley-dsp3-aov-control.wmfw
