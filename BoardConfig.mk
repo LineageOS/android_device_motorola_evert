@@ -47,4 +47,4 @@ TARGET_HAS_NO_WLAN_STATS := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # inherit from the proprietary version
--include vendor/motorola/evert/BoardConfigVendor.mk
+include vendor/motorola/evert/BoardConfigVendor.mk
