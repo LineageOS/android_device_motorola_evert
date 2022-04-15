@@ -15,6 +15,9 @@ persist.vendor.audio.calfile6=/vendor/etc/acdbdata/idn/Handset_cal.acdb
 persist.vendor.camera.expose.aux=1
 vendor.video.disable.ubwc=1
 
+# Bluetooth
+bluetooth.device.default_name=Moto G6 Plus
+
 # Fluence
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.audiorec=false
