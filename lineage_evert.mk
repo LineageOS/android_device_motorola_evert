@@ -56,11 +56,11 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 PRODUCT_DEVICE := evert
 PRODUCT_NAME := lineage_evert
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := Moto G6 Plus
-PRODUCT_MANUFACTURER := Motorola
+PRODUCT_MODEL := moto g(6) plus
+PRODUCT_MANUFACTURER := motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \
-    PRIVATE_BUILD_DESC="evert-user 8.0.0 OPW27.113-89 116 release-keys"
+    PRIVATE_BUILD_DESC="evert-user 9 PPW29.116-16-30 40d1e release-keys"
 
-BUILD_FINGERPRINT := motorola/evert/evert:8.0.0/OPW27.113-89/116:user/release-keys
+BUILD_FINGERPRINT := motorola/evert/evert:9/PPW29.116-16-30/40d1e:user/release-keys
