@@ -28,5 +28,8 @@
 on early-init
     setprop ro.boot.product.hardware.sku qcril
 
+on moto-charger
+    setprop ro.board.platform sdm660
+
 on property:ro.boot.hardware.sku=XT1926-9
     setprop ro.hw.nfc false
