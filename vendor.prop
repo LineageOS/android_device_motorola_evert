@@ -10,6 +10,10 @@ persist.vendor.audio.calfile3=/vendor/etc/acdbdata/idn/Speaker_cal.acdb
 persist.vendor.audio.calfile4=/vendor/etc/acdbdata/idn/Hdmi_cal.acdb
 persist.vendor.audio.calfile5=/vendor/etc/acdbdata/idn/Headset_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/idn/Handset_cal.acdb
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.incall_music.enable=false
+vendor.audio.offload.gapless.enabled=false
+vendor.voice.path.for.pcm.voip=false
 
 # Camera
 persist.vendor.camera.expose.aux=1
@@ -17,6 +21,9 @@ vendor.video.disable.ubwc=1
 
 # Bluetooth
 bluetooth.device.default_name=Moto G6 Plus
+
+# Display
+ro.hardware.vulkan=sdm660
 
 # Fluence
 persist.vendor.audio.dualmic.config=endfire
@@ -44,3 +51,6 @@ ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 ro.vendor.sensors.cmc=false
 ro.vendor.sdk.sensors.gestures=false
+
+# SOC
+ro.soc.model=SDM660
