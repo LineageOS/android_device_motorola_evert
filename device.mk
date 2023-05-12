@@ -102,6 +102,9 @@ PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/vendor
 $(call inherit-product, build/target/product/verity.mk)
 
+# VNDK
+PRODUCT_SHIPPING_API_LEVEL := 26
+
 # Inherit from motorola msm8998-common
 TARGET_MOTO_PLATFORM := sdm660
 $(call inherit-product, device/motorola/msm8998-common/common.mk)
