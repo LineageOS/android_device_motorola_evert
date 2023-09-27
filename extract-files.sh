@@ -20,6 +20,10 @@ function blob_fixup() {
         vendor/lib/libzaf_core.so)
             sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "${2}"
             ;;
+        # Fix missing symbol _ZN7android8hardware7details17gBnConstructorMapE
+        vendor/lib64/com.fingerprints.extension@1.0.so)
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            ;;
     esac
 }
 
