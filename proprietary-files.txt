@@ -367,9 +367,11 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 # Camera - Postprocessing
 vendor/lib/libS5k2l7Pdaf.so
 vendor/lib/libS5k2l7PdafCamif.so
-vendor/lib/libdualcameraddm.so
 vendor/lib/libmm-qcamera.so
-vendor/lib64/libdualcameraddm.so
+
+# Camera - libstdc++ -  Postprocessing
+vendor/lib/libdualcameraddm.so|751af4f60368e75b9f38a05d9976ef721bd72590
+vendor/lib64/libdualcameraddm.so|bcbd77868ad296e3c238c61c2a189c3fe3c11a21
 
 # Camera - Firmware
 vendor/firmware/cpp_firmware_v1_12_0.fw
