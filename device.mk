@@ -64,7 +64,6 @@ endif
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.evert.rc
 
 # Lineage hardware
