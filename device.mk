@@ -59,7 +59,6 @@ PRODUCT_BOOT_JARS += qcom.fmradio
 
 # Init
 PRODUCT_PACKAGES += \
-    fstab.qcom \
     init.evert.rc
 
 # Lineage hardware
