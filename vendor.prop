@@ -1,7 +1,3 @@
-#
-# vendor props for evert
-#
-
 # Audio
 persist.vendor.audio.calfile0=/vendor/etc/acdbdata/idn/Global_cal.acdb
 persist.vendor.audio.calfile1=/vendor/etc/acdbdata/idn/Bluetooth_cal.acdb
@@ -10,6 +6,13 @@ persist.vendor.audio.calfile3=/vendor/etc/acdbdata/idn/Speaker_cal.acdb
 persist.vendor.audio.calfile4=/vendor/etc/acdbdata/idn/Hdmi_cal.acdb
 persist.vendor.audio.calfile5=/vendor/etc/acdbdata/idn/Headset_cal.acdb
 persist.vendor.audio.calfile6=/vendor/etc/acdbdata/idn/Handset_cal.acdb
+persist.vendor.audio.dualmic.config=endfire
+persist.vendor.audio.fluence.audiorec=false
+persist.vendor.audio.fluence.speaker=false
+persist.vendor.audio.fluence.voicecall=false
+persist.vendor.audio.fluence.voicecomm=true
+persist.vendor.audio.fluence.voicerec=false
+ro.vendor.audio.sdk.fluencetype=none
 vendor.audio.feature.fm.enable=true
 vendor.audio.feature.incall_music.enable=false
 vendor.audio.offload.gapless.enabled=false
@@ -20,15 +23,6 @@ bluetooth.device.default_name=Moto G6 Plus
 
 # Display
 ro.hardware.vulkan=sdm660
-
-# Fluence
-persist.vendor.audio.dualmic.config=endfire
-persist.vendor.audio.fluence.audiorec=false
-persist.vendor.audio.fluence.speaker=false
-persist.vendor.audio.fluence.voicecall=false
-persist.vendor.audio.fluence.voicecomm=true
-persist.vendor.audio.fluence.voicerec=false
-ro.vendor.audio.sdk.fluencetype=none
 
 # FM
 ro.vendor.fm.use_audio_session=true

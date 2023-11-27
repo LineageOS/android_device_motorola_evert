@@ -24,26 +24,26 @@ include device/motorola/msm8998-common/BoardConfigCommon.mk
 DEVICE_PATH := device/motorola/evert
 
 # A/B updater
-AB_OTA_UPDATER := true
-
 AB_OTA_PARTITIONS += \
     boot \
     system \
     vendor
 
+AB_OTA_UPDATER := true
+
 # Assertions
-TARGET_BOARD_INFO_FILE := device/motorola/evert/board-info.txt
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := evert
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/evert_manifest.xml
+
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc/c0c4000.sdhci
 TARGET_KERNEL_CONFIG := lineageos_evert_defconfig
-
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/evert_manifest.xml
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
