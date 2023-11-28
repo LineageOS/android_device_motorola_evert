@@ -377,7 +377,7 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 system/etc/permissions/com.motorola.motosignature.xml
 system/etc/permissions/privapp-permissions-com.motorola.camera2.xml
 system/framework/com.motorola.motosignature.jar
-system/priv-app/MotCamera2/MotCamera2.apk
+system/priv-app/MotCamera2/MotCamera2.apk|5bc191b80726f0cb32b4e54cd3cb05cd3224ce7f
 
 # Camera - MotCamera2 (JNI)
 system/priv-app/MotCamera2/lib/arm64/libBulkSNPE.so|d4c0815740830ced2a73c34204e82c983bbce8f8
