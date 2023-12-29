@@ -25,7 +25,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             ;;
         # New naming for libstdc++
-        vendor/lib/libdualcameraddm.so|vendor/lib64/libdualcameraddm.so)
+        vendor/lib*/libdualcameraddm.so|vendor/lib*/libvideobokeh.so|vendor/lib/libmmcamera_hdr_gb_lib.so)
             "${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${2}"
             ;;
     esac
