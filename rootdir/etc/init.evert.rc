@@ -25,9 +25,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-on early-init
-    setprop ro.boot.product.hardware.sku qcril
-
 on moto-charger
     setprop ro.board.platform sdm660
 
