@@ -1,6 +1,9 @@
 soong_namespace {
+<<<<<<< PATCH SET (0be703 evert: switch to common QCOM AIDL bootctrl HAL)
+=======
     imports: [
         "hardware/qcom/bootctrl",
         "vendor/motorola/evert",
     ],
+>>>>>>> BASE      (732ce2 evert: Include vendor namespace)
 }
