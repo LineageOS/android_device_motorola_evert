@@ -76,8 +76,8 @@ WITH_GMS_COMMS_SUITE=false
 endif
 
 # Init
-PRODUCT_PACKAGES += \
-    init.evert.rc
+$(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
+        $(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/$(notdir $f)))
 
 # Lineage Touch HAL
 PRODUCT_PACKAGES += \
