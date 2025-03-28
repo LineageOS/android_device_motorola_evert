@@ -1,28 +1,31 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from evert_retail (PPWS29.116-20-2).
 
-# Audio - ACDB - from lake_retail (QPWS30.61-21-11)
+# Current blobs with ELF checks disabled:
+# libmmcamera2_cpp_module, libmmcamera2_iface_modules, libmmcamera2_imglib_modules, libmmcamera2_is, libmmcamera2_isp_modules, libmmcamera2_mct, libmmcamera2_q3a_core, libmmcamera2_sensor_modules, libmmcamera2_stats_algorithm, libmmcamera2_stats_lib, libmmcamera2_stats_modules, libmmcamera_faceproc, libmmcamera_hdr_gb_lib, libmmcamera_interface, libmmcamera_pdaf, libmmcamera_pdafcamif, libmmcamera_vstab_module are unable to resolve the following symbol: __aeabi_uldivmod (32-bit)
+
+# Audio - ACDB
 vendor/etc/acdbdata/common/Bluetooth_cal.acdb
 vendor/etc/acdbdata/common/General_cal.acdb
 vendor/etc/acdbdata/common/Global_cal.acdb
 vendor/etc/acdbdata/common/Handset_cal.acdb
 vendor/etc/acdbdata/common/Hdmi_cal.acdb
-vendor/etc/acdbdata/common/Headset_cal.acdb|4df2c470c39c4ca779011b546218d5d0de989206
+vendor/etc/acdbdata/common/Headset_cal.acdb
 vendor/etc/acdbdata/common/Speaker_cal.acdb
 vendor/etc/acdbdata/idn/General_cal.acdb
 vendor/etc/acdbdata/idn/Global_cal.acdb
 vendor/etc/acdbdata/idn/Hdmi_cal.acdb
 vendor/etc/acdbdata/idn/Speaker_cal.acdb
 
-# Audio - ACDB - from lake_retail (QPWS30.61-21-11)
-vendor/etc/acdbdata/idn/Bluetooth_cal.acdb|de32f236e41af911ffaa7a52018eb5e1556936c1
-vendor/etc/acdbdata/idn/Handset_cal.acdb|f9d49f6e2fc399f8c7d8574fa357bbfaba7dc54f
-vendor/etc/acdbdata/idn/Headset_cal.acdb|6ac7e68e3794f9a2b73f37a516e29be178eba33f
+# Audio - ACDB - from lake_retail (QPWS30.61-21-18-7-12)
+vendor/etc/acdbdata/Bluetooth_cal.acdb:vendor/etc/acdbdata/idn/Bluetooth_cal.acdb|de32f236e41af911ffaa7a52018eb5e1556936c1
+vendor/etc/acdbdata/Handset_cal.acdb:vendor/etc/acdbdata/idn/Handset_cal.acdb|f9d49f6e2fc399f8c7d8574fa357bbfaba7dc54f
+vendor/etc/acdbdata/Headset_cal.acdb:vendor/etc/acdbdata/idn/Headset_cal.acdb|6ac7e68e3794f9a2b73f37a516e29be178eba33f
 
 # Camera
-etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
-etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
-etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
+system/etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
+system/etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
+system/etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
 vendor/etc/camera/camera_config.xml
 vendor/etc/camera/mot_ov5675_chromatix.xml
 vendor/etc/camera/mot_s5k3p8sp_chromatix.xml
@@ -57,10 +60,10 @@ vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
-vendor/lib/libremosaic_daemon.so|6b58f6fc051b834183768070b09bcd7493beace9
+vendor/lib/libremosaic_daemon.so
 vendor/lib/libvideobokeh.so
-vendor/lib/libzaf_algs.so|f04d4f7598775795f7d598d5e11f2f5c8d36279a
-vendor/lib/libzaf_core.so|2b65a4fba953669f7be09fb183bad4d5a11d00ef
+vendor/lib/libzaf_algs.so
+vendor/lib/libzaf_core.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libmcf-qc-fd-offline.so
 vendor/lib64/libvideobokeh.so
@@ -248,21 +251,21 @@ vendor/firmware/cpp_firmware_v1_12_0.fw
 
 # Camera - mmcamera
 vendor/lib/libmmcamera2_c2d_module.so
-vendor/lib/libmmcamera2_cpp_module.so
+vendor/lib/libmmcamera2_cpp_module.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_frame_algorithm.so
-vendor/lib/libmmcamera2_iface_modules.so|c837cb0f9dc3a49c5e5b68b713ae8de9298751ed
-vendor/lib/libmmcamera2_imglib_modules.so|7c8099de97c7e3e3f830d8d6130c867daa7a4d91
-vendor/lib/libmmcamera2_is.so
-vendor/lib/libmmcamera2_isp_modules.so
-vendor/lib/libmmcamera2_mct.so|8ea84f3891fedfe2bf9b27456993a9801b0c1f8b
+vendor/lib/libmmcamera2_iface_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_imglib_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_is.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_isp_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_mct.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera2_mct_shimlayer.so
 vendor/lib/libmmcamera2_pp_buf_mgr.so
 vendor/lib/libmmcamera2_pproc_modules.so
-vendor/lib/libmmcamera2_q3a_core.so
-vendor/lib/libmmcamera2_sensor_modules.so|869c0ca5217a087bd98ef291a60e56de5d1a0080
-vendor/lib/libmmcamera2_stats_algorithm.so
-vendor/lib/libmmcamera2_stats_lib.so
-vendor/lib/libmmcamera2_stats_modules.so|d0c24aa6a85630aacdc8f080f2d8a192083b86f8
+vendor/lib/libmmcamera2_q3a_core.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_sensor_modules.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_algorithm.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_lib.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera2_stats_modules.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_dbg.so
 vendor/lib/libmmcamera_depth_map.so
@@ -270,18 +273,18 @@ vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
 vendor/lib/libmmcamera_eztune_module.so
 vendor/lib/libmmcamera_facedetection_lib.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmmcamera_gt24c128b_mono_eeprom.so
 vendor/lib/libmmcamera_gt24c128b_rgb_eeprom.so
-vendor/lib/libmmcamera_hdr_gb_lib.so
+vendor/lib/libmmcamera_hdr_gb_lib.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_hvx_add_constant.so
 vendor/lib/libmmcamera_hvx_grid_sum.so
 vendor/lib/libmmcamera_imglib.so
 vendor/lib/libmmcamera_imglib_faceproc_adspstub.so
 vendor/lib/libmmcamera_imx386.so
 vendor/lib/libmmcamera_imx386_mono.so
-vendor/lib/libmmcamera_interface.so
+vendor/lib/libmmcamera_interface.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
 vendor/lib/libmmcamera_isp_bf_stats47.so
@@ -346,8 +349,8 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so|4a2e5860544ef78bcd1421769f5940f29ff1aac1
-vendor/lib/libmmcamera_quadracfa.so|3c6f452b9eb4e4b930db7332d7e963a1f4f35a47
+vendor/lib/libmmcamera_ppeiscore.so
+vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_s5k4h7_eeprom.so
 vendor/lib/libmmcamera_s5k4h7a8s_eeprom.so
 vendor/lib/libmmcamera_s5k4h8.so
@@ -373,20 +376,34 @@ vendor/lib64/libmmcamera_tintless_algo.so
 vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Camera - MotCamera2
--system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED|93581be59e0f35a5ed1eea0fa440504d223ef485
+system/app/MotoSignatureApp/MotoSignatureApp.apk;PRESIGNED
 system/etc/permissions/com.motorola.motosignature.xml
 system/etc/permissions/privapp-permissions-com.motorola.camera2.xml
-system/framework/com.motorola.motosignature.jar|1b322b6a7bd89b9bf8cb9f4394dc8e296485205a
+system/framework/com.motorola.motosignature.jar
 system/priv-app/MotCamera2/MotCamera2.apk
 
 # Camera - Postprocessing
 vendor/lib/libS5k2l7Pdaf.so
 vendor/lib/libS5k2l7PdafCamif.so
 vendor/lib/libmm-qcamera.so
+vendor/lib/libdualcameraddm.so
+vendor/lib64/libdualcameraddm.so
 
-# Camera - Postprocessing - libstdc++
-vendor/lib/libdualcameraddm.so|751af4f60368e75b9f38a05d9976ef721bd72590
-vendor/lib64/libdualcameraddm.so|bcbd77868ad296e3c238c61c2a189c3fe3c11a21
+# Camera - SCVE
+vendor/lib/libadsp_hvx_callback_skel.so
+vendor/lib/libadsp_hvx_stub.so
+vendor/lib/libfastcvadsp_stub.so
+vendor/lib/libscveBlobDescriptor.so
+vendor/lib/libscveBlobDescriptor_stub.so
+vendor/lib/libscveCommon.so
+vendor/lib/libscveCommon_stub.so
+vendor/lib/libscveFaceRecognition.so
+vendor/lib/libscveObjectSegmentation.so
+vendor/lib/libscveObjectSegmentation_stub.so
+vendor/lib/libscveObjectTracker.so
+vendor/lib/libscveObjectTracker_stub.so
+vendor/lib/libscvePanorama.so
+vendor/lib/libscvePanorama_lite.so
 
 # Display Calibrations
 vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml
@@ -397,21 +414,25 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml
 vendor/bin/qseecomd
 vendor/lib/libQSEEComAPI.so
 vendor/lib/libcppf.so
-vendor/lib/liboemcrypto.so
+vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libSecureUILib.so
-vendor/lib64/libdrmfs.so|17c2c0b8b7a2f5013fc8f93825998d9fd5f525f5
+vendor/lib64/libStDrvInt.so
+vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
+vendor/lib64/libhdcpsrm.so
+vendor/lib64/liboemcrypto.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
+vendor/lib64/libsecureui_svcsock.so
 vendor/lib64/libssd.so
+vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-vendor/lib64/com.fingerprints.extension@1.0.so
 
 # Firmware - CapSense
 system/etc/firmware/MotorolaCapSense.hex:vendor/firmware/MotorolaCapSense.hex
@@ -463,6 +484,20 @@ vendor/lib64/libkeymasterutils.so
 
 # NFC
 vendor/lib64/libpn553_fw.so:vendor/lib/libpn553_fw.so
+
+# Offmode charging
+vendor/bin/charge_only_mode
+
+# Sensors
+vendor/bin/sensors.qti
+vendor/lib/libsensor1.so
+vendor/lib/libsensor_reg.so
+vendor/lib/sensor_calibrate.so
+vendor/lib/sensors.rp.so
+vendor/lib64/libsensor1.so
+vendor/lib64/libsensor_reg.so
+vendor/lib64/sensor_calibrate.so
+vendor/lib64/sensors.rp.so
 
 # Sensors - from lake_retail (QPWS30.61-21-18-7-12)
 vendor/lib/sensors.ssc.so|8d311851599fd687fff7ba3a13faecd87a04b4e7
