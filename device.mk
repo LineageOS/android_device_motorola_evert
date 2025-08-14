@@ -73,6 +73,11 @@ $(foreach f,$(wildcard $(LOCAL_PATH)/rootdir/etc/init/hw/*.rc),\
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.msm8998
 
+# LiveDisplay
+$(call soong_config_set,livedisplay_sdm,enable_dm,false)
+$(call soong_config_set,livedisplay_sysfs,enable_ab,true)
+$(call soong_config_set,livedisplay_sysfs,enable_se,true)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
